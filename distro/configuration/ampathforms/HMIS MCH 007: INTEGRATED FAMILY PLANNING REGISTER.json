@@ -17,7 +17,16 @@
                   "rendering": "radio",
                   "concept": "dc692ad3-30ab-102d-86b0-7a5022ba4115",
                   "conceptMappings": [],
-                  "answers": []
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Condoms (Male)"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
                 }
               },
               {
