@@ -12,6 +12,7 @@
                 "label": "Exit Outcome",
                 "type": "obs",
                 "required": true,
+                "unspecified": "true",
                 "id": "exit_outcome",
                 "questionOptions": {
                   "rendering": "select",
@@ -51,7 +52,18 @@
                       "label": "TRANSFERED OUT TO ANOTHER FACILITY"
                     }
                   ]
-                }
+                },
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Pregnancy/Lactating Status",
@@ -81,7 +93,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Other Pregnancy Status",
@@ -130,7 +152,17 @@
                   ],
                   "answers": []
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":"pregnancy_status !== 'dcd68a88-30ab-102d-86b0-7a5022ba4115'"
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Type of Admission",
@@ -138,7 +170,7 @@
                 "required": true,
                 "id": "type_of_admission",
                 "questionOptions": {
-                  "rendering": "select",
+                  "rendering": "radio",
                   "concept": "165044AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                   "conceptMappings": [],
                   "answers": [
@@ -152,7 +184,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Type of Nutrition Management",
@@ -160,7 +202,7 @@
                 "required": true,
                 "id": "type_nutrition_management",
                 "questionOptions": {
-                  "rendering": "select",
+                  "rendering": "radio",
                   "concept": "c7848c0f-4711-4501-9d5d-7b5eb5616add",
                   "conceptMappings": [],
                   "answers": [
@@ -178,7 +220,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Entry Care Point",
@@ -212,7 +264,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Assessment Method",
@@ -242,7 +304,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Nutritional Status at Enrollment",
@@ -250,7 +322,7 @@
                 "required": true,
                 "id": "nutrition_status_enrollment",
                 "questionOptions": {
-                  "rendering": "select",
+                  "rendering": "radio",
                   "concept": "c7848c0f-4711-4501-9d5d-7b5eb5616add",
                   "conceptMappings": [],
                   "answers": [
@@ -268,7 +340,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               }
             ]
           }
@@ -292,7 +374,17 @@
                   "conceptMappings": [],
                   "answers": []
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "TB Status",
@@ -330,7 +422,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Disability",
@@ -392,7 +494,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               }
             ]
           }
@@ -433,7 +545,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "ART Services at Enrollment",
@@ -441,7 +563,7 @@
                 "required": true,
                 "id": "art_services_enrollment",
                 "questionOptions": {
-                  "rendering": "select",
+                  "rendering": "radio",
                   "concept": "165049AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                   "conceptMappings": [],
                   "answers": [
@@ -455,7 +577,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":"!includes(hiv_status_enrollment, 'dcdf4241-30ab-102d-86b0-7a5022ba4115') && hiv_status_enrollment !== '872139fa-9820-4fde-87fd-f00df9ddcbd6'"
+                    },
+                    "validators":[]
+                  }
+                ]
               }
             ]
           }
@@ -661,7 +793,7 @@
                     "required": true,
                     "id": "muac",
                     "questionOptions": {
-                      "rendering": "select",
+                      "rendering": "radio",
                       "concept": "5f86d19d-9546-4466-89c0-6f80c101191b",
                       "conceptMappings": [],
                       "answers": [
@@ -679,7 +811,17 @@
                         }
                       ]
                     },
-                    "validators": []
+                    "behaviours":[
+                      {
+                        "intent":"*",
+                        "required":"false",
+                        "unspecified":"true",
+                        "hide":{
+                          "hideWhenExpression":""
+                        },
+                        "validators":[]
+                      }
+                    ]
                   },
                   {
                     "label": "Length Z-SCORE",
@@ -713,20 +855,29 @@
                         }
                       ]
                     },
-                    "validators": []
+                    "behaviours":[
+                      {
+                        "intent":"*",
+                        "required":"false",
+                        "unspecified":"true",
+                        "hide":{
+                          "hideWhenExpression":""
+                        },
+                        "validators":[]
+                      }
+                    ]
                   },
                   {
                     "label": "BMI",
                     "type": "obs",
-                    "required": true,
-                    "id": "bmi",
                     "questionOptions": {
-                      "rendering": "text",
-                      "concept": "dca1f717-30ab-102d-86b0-7a5022ba4115",
-                      "conceptMappings": [],
-                      "answers": []
+                      "rendering": "number",
+                      "calculate": {
+                        "calculateExpression": "Math.round(calcBMI('height','weight'))"
+                      },
+                      "concept": "cfce59f0-0ddd-4722-8eea-1ce5efaffc8b"
                     },
-                    "validators": []
+                    "id": "bmi"
                   },
                   {
                     "label": "Apetite Test",
@@ -752,7 +903,17 @@
                         }
                       ]
                     },
-                    "validators": []
+                    "behaviours":[
+                      {
+                        "intent":"*",
+                        "required":"false",
+                        "unspecified":"true",
+                        "hide":{
+                          "hideWhenExpression":""
+                        },
+                        "validators":[]
+                      }
+                    ]
                   },
                   {
                     "label": "Supplementary Foods",
@@ -786,7 +947,17 @@
                         }
                       ]
                     },
-                    "validators": []
+                    "behaviours":[
+                      {
+                        "intent":"*",
+                        "required":"false",
+                        "unspecified":"true",
+                        "hide":{
+                          "hideWhenExpression":""
+                        },
+                        "validators":[]
+                      }
+                    ]
                   }
                 ]
               }
@@ -825,7 +996,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Weight",
@@ -874,7 +1055,17 @@
                   ],
                   "answers": []
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Height",
@@ -918,7 +1109,17 @@
                   ],
                   "answers": []
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "MUAC",
@@ -926,7 +1127,7 @@
                 "required": true,
                 "id": "muac_at_exit",
                 "questionOptions": {
-                  "rendering": "select",
+                  "rendering": "radio",
                   "concept": "5f86d19d-9546-4466-89c0-6f80c101191b",
                   "conceptMappings": [],
                   "answers": [
@@ -944,7 +1145,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Councelling code",
@@ -982,7 +1193,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Other Counselling Code",
@@ -1031,7 +1252,17 @@
                   ],
                   "answers": []
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":"counselling_code !== 'dcd68a88-30ab-102d-86b0-7a5022ba4115'"
+                    },
+                    "validators":[]
+                  }
+                ]
               }
             ]
           },
@@ -1096,7 +1327,17 @@
                     }
                   ]
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Exit Date",
@@ -1109,7 +1350,17 @@
                   "conceptMappings": [],
                   "answers": []
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Transfer Out To",
@@ -1122,7 +1373,17 @@
                   "conceptMappings": [],
                   "answers": []
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               },
               {
                 "label": "Transfer In",
@@ -1135,7 +1396,17 @@
                   "conceptMappings": [],
                   "answers": []
                 },
-                "validators": []
+                "behaviours":[
+                  {
+                    "intent":"*",
+                    "required":"false",
+                    "unspecified":"true",
+                    "hide":{
+                      "hideWhenExpression":""
+                    },
+                    "validators":[]
+                  }
+                ]
               }
             ]
           }
