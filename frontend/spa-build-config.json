@@ -45,7 +45,8 @@
     "@ugandaemr/esm-radiology-app": "next",
     "@ugandaemr/esm-theatre-app": "next",
     "@ugandaemr/esm-family-health-app": "next",
-    "@ugandaemr/esm-patient-queues-app": "next"
+    "@ugandaemr/esm-patient-queues-app": "next",
+    "@ugandaemr/esm-tb-app": "next"
   },
   "spaPath": "$SPA_PATH",
   "apiUrl": "$API_URL",
