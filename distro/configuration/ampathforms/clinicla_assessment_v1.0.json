@@ -1,0 +1,259 @@
+{
+  "name": "Clinical Examination",
+  "description": "Clinical Examination",
+  "version": "1.0",
+  "published": true,
+  "uuid": "802ed463-6d8f-40e9-913f-dba6677abce2",
+  "retired": false,
+  "encounter": "Clinical Examination",
+  "pages": [
+    {
+      "label": "Clinical Examination",
+      "sections": [
+        {
+          "label": "Visit details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date:",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encDate"
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        },
+        {
+          "label": "Presenting Signs and Symptoms",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Presenting Signs and Symptoms",
+              "type": "obs",
+              "required": false,
+              "id": "presentingSignsSymptoms",
+              "questionOptions": {
+                "rendering": "multiCheckbox",
+                "concept": "dce0e02a-30ab-102d-86b0-7a5022ba4115",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "dc685df9-30ab-102d-86b0-7a5022ba4115",
+                    "label": "ABDOMINAL PAIN"
+                  },
+                  {
+                    "concept": "149856AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Acute Diarrhea"
+                  },
+                  {
+                    "concept": "cf471f5f-5aeb-456b-bc79-76a0d33cd618",
+                    "label": "Biphasic isophane insulin (soluble)"
+                  },
+                  {
+                    "concept": "147241AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Bleeding"
+                  },
+                  {
+                    "concept": "dbff1242-8cc7-4808-9adb-beae4cb136ae",
+                    "label": "Bleeding site"
+                  },
+                  {
+                    "concept": "dcde9191-30ab-102d-86b0-7a5022ba4115",
+                    "label": "BREATHING DIFFICULTY"
+                  },
+                  {
+                    "concept": "120749AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Chest pain"
+                  },
+                  {
+                    "concept": "dc8dd1a1-30ab-102d-86b0-7a5022ba4115",
+                    "label": "Chills"
+                  },
+                  {
+                    "concept": "dcdde239-30ab-102d-86b0-7a5022ba4115",
+                    "label": "CONFUSION"
+                  },
+                  {
+                    "concept": "dc666657-30ab-102d-86b0-7a5022ba4115",
+                    "label": "CONJUNCTIVITIS"
+                  },
+                  {
+                    "concept": "dcde8cfc-30ab-102d-86b0-7a5022ba4115",
+                    "label": "COUGH"
+                  },
+                  {
+                    "concept": "dcde75ed-30ab-102d-86b0-7a5022ba4115",
+                    "label": "DEMENTIA"
+                  },
+                  {
+                    "concept": "dcde7a2e-30ab-102d-86b0-7a5022ba4115",
+                    "label": "ENCEPHALITIS"
+                  },
+                  {
+                    "concept": "dcddab4c-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FATIGUE"
+                  },
+                  {
+                    "concept": "dcde88c8-30ab-102d-86b0-7a5022ba4115",
+                    "label": "FEVER"
+                  },
+                  {
+                    "concept": "dcdeb5a5-30ab-102d-86b0-7a5022ba4115",
+                    "label": "GENITAL ULCER DISEASE"
+                  },
+                  {
+                    "concept": "dcddaf94-30ab-102d-86b0-7a5022ba4115",
+                    "label": "HEADACHE"
+                  },
+                  {
+                    "concept": "dcde97e6-30ab-102d-86b0-7a5022ba4115",
+                    "label": "IMMUNE RECONSTITUTION INFLAMMATORY SYNDROME"
+                  },
+                  {
+                    "concept": "dc658ee1-30ab-102d-86b0-7a5022ba4115",
+                    "label": "JOINT PAIN"
+                  },
+                  {
+                    "concept": "dcd4d9c7-30ab-102d-86b0-7a5022ba4115",
+                    "label": "MUSCLE PAIN"
+                  },
+                  {
+                    "concept": "1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "None"
+                  },
+                  {
+                    "concept": "dcdeac6a-30ab-102d-86b0-7a5022ba4115",
+                    "label": "PELVIC INFLAMMATORY DISEASE"
+                  },
+                  {
+                    "concept": "dcde6fa4-30ab-102d-86b0-7a5022ba4115",
+                    "label": "PNEUMONIA"
+                  },
+                  {
+                    "concept": "dc668353-30ab-102d-86b0-7a5022ba4115",
+                    "label": "PRESUMED"
+                  },
+                  {
+                    "concept": "512AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Rash"
+                  },
+                  {
+                    "concept": "94c53f26-13cd-43bc-80b7-0390122aa6ab",
+                    "label": "Recent inability to walk"
+                  },
+                  {
+                    "concept": "dc91d130-30ab-102d-86b0-7a5022ba4115",
+                    "label": "RESPIRATORY TRACT INFECTION, NOS"
+                  },
+                  {
+                    "concept": "dc662180-30ab-102d-86b0-7a5022ba4115",
+                    "label": "RESPIRATORY TRACT INFECTION, UPPER"
+                  },
+                  {
+                    "concept": "206AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Seizure"
+                  },
+                  {
+                    "concept": "158843AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Sore throat"
+                  },
+                  {
+                    "concept": "dcde7e49-30ab-102d-86b0-7a5022ba4115",
+                    "label": "THRUSH"
+                  },
+                  {
+                    "concept": "dcdebc02-30ab-102d-86b0-7a5022ba4115",
+                    "label": "ULCERS"
+                  },
+                  {
+                    "concept": "dcdea40e-30ab-102d-86b0-7a5022ba4115",
+                    "label": "URETHRAL DISCHARGE"
+                  },
+                  {
+                    "concept": "dccfffa9-30ab-102d-86b0-7a5022ba4115",
+                    "label": "VOMITING"
+                  },
+                  {
+                    "concept": "dcb1c8f8-30ab-102d-86b0-7a5022ba4115",
+                    "label": "WEAKNESS"
+                  },
+                  {
+                    "concept": "dcde9e0d-30ab-102d-86b0-7a5022ba4115",
+                    "label": "WEIGHT LOSS"
+                  },
+                  {
+                    "concept": "dcde6b70-30ab-102d-86b0-7a5022ba4115",
+                    "label": "ZOSTER"
+                  }
+                ]
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Diagnosis",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Diagnosis",
+              "type": "obs",
+              "id": "diagnosis",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "159392AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "",
+                "conceptMappings": []
+              }
+            },
+            {
+              "label": "Primary Diagnosis ",
+              "type": "obs",
+              "required": false,
+              "id": "primary_diagnosis",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "9fcafaf4-55ee-4a17-a201-35b0f9ed3f5d",
+                "conceptMappings": [],
+                "answers": []
+              },
+              "validators": []
+            },
+            {
+              "label": "Secondary Diagnosis ",
+              "type": "obs",
+              "required": false,
+              "id": "secondary_diagnosis",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "9fcafaf4-55ee-4a17-a201-35b0f9ed3f5d",
+                "conceptMappings": [],
+                "answers": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "encounterType": "ee4780f5-b5eb-423b-932f-00b5879df5ab"
+}
